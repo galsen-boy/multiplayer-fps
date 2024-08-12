@@ -1,7 +1,7 @@
 # Multiplayer FPS
-#### Authored by: [Mouhamadou Fadilou Diop](https://learn.zone01dakar.sn/git/mouhamadoufadiop/rt), [Daibou Ba](https://learn.zone01dakar.sn/git/daiba), [Ibrahima Diallo](https://learn.zone01dakar.sn/git/ediallo), [Mamadou Baldé](https://learn.zone01dakar.sn/git/mabalde)
+#### Authored by: [Mouhamadou Fadilou Diop](https://learn.zone01dakar.sn/git/mouhamadoufadiop/), [Daibou Ba](https://learn.zone01dakar.sn/git/daiba), [Ibrahima Diallo](https://learn.zone01dakar.sn/git/ediallo), [Mamadou Baldé](https://learn.zone01dakar.sn/git/mabalde/multiplayer-fps)
 ###### Completed during [zone01-dakar](https://learn.zone01dakar.sn/) full-stack development course.
-#### Project Description: [here](https://github.com/01-edu/public/blob/master/subjects/rt/README.md)
+#### Project Description: [here](https://github.com/01-edu/public/blob/master/subjects/multiplayer-fps/README.md)
 
 ## Running the game:
 ``cargo run --release --bin client``
