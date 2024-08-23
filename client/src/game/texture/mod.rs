@@ -69,7 +69,7 @@ pub static TEX_WOOD: Lazy<TextureSampler> = Lazy::new(|| {
 // });
 
 pub static WEAPON_CRATE: Lazy<TextureSampler> = Lazy::new(|| {
-    TextureSampler::try_from(include_bytes!("../../../assets/weapon_crate.png").as_slice()).unwrap()
+    TextureSampler::try_from(include_bytes!("../../../assets/weapon_icon.png").as_slice()).unwrap()
 });
 
 pub static TEX_TEST1: Lazy<TextureSampler> = Lazy::new(|| {
