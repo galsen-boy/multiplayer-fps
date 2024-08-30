@@ -31,7 +31,7 @@ pub static TEX_BRICK1: Lazy<TextureSampler> = Lazy::new(|| {
 });
 
 pub static TEX_BRICK2: Lazy<TextureSampler> = Lazy::new(|| {
-    TextureSampler::try_from(include_bytes!("../../../assets/walls/bricks/REDBRICKS.png").as_slice()).unwrap()
+    TextureSampler::try_from(include_bytes!("../../../assets/walls/tech/TECHWALLA.png").as_slice()).unwrap()
         .set_dominant([147, 42, 32, 255])
 });
 
@@ -44,7 +44,7 @@ pub static TEX_INDUSTRIAL: Lazy<TextureSampler> = Lazy::new(|| {
 });
 
 pub static TEX_ROCKY: Lazy<TextureSampler> = Lazy::new(|| {
-    TextureSampler::try_from(include_bytes!("../../../assets/walls/rocks/GRAYROCKS.png").as_slice()).unwrap()
+    TextureSampler::try_from(include_bytes!("../../../assets/walls/building_textures/mossy.png").as_slice()).unwrap()
 });
 
 pub static TEX_TECHY: Lazy<TextureSampler> = Lazy::new(|| {
@@ -56,7 +56,7 @@ pub static TEX_URBAN: Lazy<TextureSampler> = Lazy::new(|| {
 });
 
 pub static TEX_WOOD: Lazy<TextureSampler> = Lazy::new(|| {
-    TextureSampler::try_from(include_bytes!("../../../assets/walls/wood/WOODA.png").as_slice()).unwrap()
+    TextureSampler::try_from(include_bytes!("../../../assets/walls/wood/CREAKYWOOD.png").as_slice()).unwrap()
 });
 
 
