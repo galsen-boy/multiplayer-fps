@@ -1,0 +1,4 @@
+#!/bin/bash
+
+# Exécuter la commande cargo avec les paramètres spécifiés
+cargo run --release --bin su-client

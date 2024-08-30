@@ -40,7 +40,7 @@ pub static TEX_DOOR: Lazy<TextureSampler> = Lazy::new(|| {
 });
 
 pub static TEX_INDUSTRIAL: Lazy<TextureSampler> = Lazy::new(|| {
-    TextureSampler::try_from(include_bytes!("../../../assets/walls/industrial/CROSSCUBE.png").as_slice()).unwrap()
+    TextureSampler::try_from(include_bytes!("../../../assets/walls/industrial/METALTILE.png").as_slice()).unwrap()
 });
 
 pub static TEX_ROCKY: Lazy<TextureSampler> = Lazy::new(|| {
