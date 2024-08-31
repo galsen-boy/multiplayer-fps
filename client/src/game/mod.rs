@@ -275,7 +275,7 @@ impl ProgramState for Game {
                 };
 
                 if ctx.input().key_down(notan::egui::Key::Tab) {
-                    Window::new("leaderboard")
+                    Window::new("Scoreboard")
                         .frame(leaderboard_frame)
                         .collapsible(false)
                         .resizable(false)
@@ -291,7 +291,7 @@ impl ProgramState for Game {
                                 };
 
                                 ui.label(format!(
-                                    "[{}] K: {}, D: {}, K/D: {kd}",
+                                    "[{}] Kills: {}, Deaths: {}, K/D: {kd}",
                                     player.name, kills.0, deaths.0,
                                 ));
                             }
