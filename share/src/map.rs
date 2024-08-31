@@ -22,7 +22,7 @@ struct Skip {
     pub y: usize,
 }
 
-#[rustfmt::skip::macros(vec)]
+#[rustfmt::s::macros(vec)]
 impl Default for Map {
     fn default() -> Self {
         let e = MapCell::Empty;
