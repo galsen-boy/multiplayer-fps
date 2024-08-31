@@ -279,7 +279,7 @@ impl ProgramState for Game {
                         .frame(leaderboard_frame)
                         .collapsible(false)
                         .resizable(false)
-                        .fixed_pos(Pos2 { x: 550.0, y: 5.0 })
+                        .fixed_pos(Pos2 { x: 0.0, y: 0.0 })
                         .show(ctx, |ui| {
                             for (_, (player, kills, deaths)) in
                                 self.ecs.world.query::<(&Player, &Kills, &Deaths)>().iter()
@@ -299,7 +299,7 @@ impl ProgramState for Game {
                 }
 
                 notan::egui::Area::new("fps-counter")
-                    .fixed_pos(notan::egui::pos2(0.0, 0.0))
+                    .fixed_pos(notan::egui::pos2(550.0, 5.0))
                     .show(ctx, |ui| {
                         ui.label(format!("FPS: {}", self.fps.tick()));
                     });
