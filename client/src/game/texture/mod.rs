@@ -48,7 +48,7 @@ pub static TEX_ROCKY: Lazy<TextureSampler> = Lazy::new(|| {
 });
 
 pub static TEX_TECHY: Lazy<TextureSampler> = Lazy::new(|| {
-    TextureSampler::try_from(include_bytes!("../../../assets/walls/tech/HEXAGONS.png").as_slice()).unwrap()
+    TextureSampler::try_from(include_bytes!("../../../assets/walls/industrial/METALTILE.png").as_slice()).unwrap()
 });
 
 pub static TEX_URBAN: Lazy<TextureSampler> = Lazy::new(|| {
