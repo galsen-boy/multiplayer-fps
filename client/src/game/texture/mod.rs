@@ -27,36 +27,36 @@ pub fn get_wall_texture(tex: Textured) -> &'static TextureSampler {
 
 
 pub static TEX_BRICK1: Lazy<TextureSampler> = Lazy::new(|| {
-    TextureSampler::try_from(include_bytes!("../../../assets/walls/bricks/ROUNDBRICKS.png").as_slice()).unwrap()
+    TextureSampler::try_from(include_bytes!("../../../assets/murs/bricks/ROUNDBRICKS.png").as_slice()).unwrap()
 });
 
 pub static TEX_BRICK2: Lazy<TextureSampler> = Lazy::new(|| {
-    TextureSampler::try_from(include_bytes!("../../../assets/walls/bricks/ROUNDBRICKS.png").as_slice()).unwrap()
+    TextureSampler::try_from(include_bytes!("../../../assets/murs/bricks/ROUNDBRICKS.png").as_slice()).unwrap()
         .set_dominant([147, 42, 32, 255])
 });
 
 pub static TEX_DOOR: Lazy<TextureSampler> = Lazy::new(|| {
-    TextureSampler::try_from(include_bytes!("../../../assets/walls/doors/CREAKYDOOR.png").as_slice()).unwrap()
+    TextureSampler::try_from(include_bytes!("../../../assets/murs/portes/CREAKYDOOR.png").as_slice()).unwrap()
 });
 
 pub static TEX_INDUSTRIAL: Lazy<TextureSampler> = Lazy::new(|| {
-    TextureSampler::try_from(include_bytes!("../../../assets/walls/industrial/METALTILE.png").as_slice()).unwrap()
+    TextureSampler::try_from(include_bytes!("../../../assets/murs/industrial/METALTILE.png").as_slice()).unwrap()
 });
 
 pub static TEX_ROCKY: Lazy<TextureSampler> = Lazy::new(|| {
-    TextureSampler::try_from(include_bytes!("../../../assets/walls/bricks/ROUNDBRICKS.png").as_slice()).unwrap()
+    TextureSampler::try_from(include_bytes!("../../../assets/murs/bricks/ROUNDBRICKS.png").as_slice()).unwrap()
 });
 
 pub static TEX_TECHY: Lazy<TextureSampler> = Lazy::new(|| {
-    TextureSampler::try_from(include_bytes!("../../../assets/walls/industrial/METALTILE.png").as_slice()).unwrap()
+    TextureSampler::try_from(include_bytes!("../../../assets/murs/industrial/METALTILE.png").as_slice()).unwrap()
 });
 
 pub static TEX_URBAN: Lazy<TextureSampler> = Lazy::new(|| {
-    TextureSampler::try_from(include_bytes!("../../../assets/walls/industrial/METALTILE.png").as_slice()).unwrap()
+    TextureSampler::try_from(include_bytes!("../../../assets/murs/industrial/METALTILE.png").as_slice()).unwrap()
 });
 
 pub static TEX_WOOD: Lazy<TextureSampler> = Lazy::new(|| {
-    TextureSampler::try_from(include_bytes!("../../../assets/walls/industrial/METALTILE.png").as_slice()).unwrap()
+    TextureSampler::try_from(include_bytes!("../../../assets/murs/industrial/METALTILE.png").as_slice()).unwrap()
 });
 
 
