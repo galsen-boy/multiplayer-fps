@@ -1,10 +1,11 @@
+//Importations :
 use std::{error::Error, fmt::Display};
 
 use hecs::NoSuchEntity;
 use message_io::network::Endpoint;
 
 use crate::server::{Logger, Server};
-
+//Définition des erreurs :
 #[derive(Debug)]
 pub enum LeaveErrors {
     FailedToRemoveFromHashMap,
@@ -12,7 +13,7 @@ pub enum LeaveErrors {
     DeSpawn(NoSuchEntity),
     Serialize(bincode::Error),
 }
-
+//Implémentations des traits :
 impl From<NoSuchEntity> for LeaveErrors {
     fn from(value: NoSuchEntity) -> Self {
         LeaveErrors::DeSpawn(value)
