@@ -75,7 +75,7 @@ impl Program {
         }
 
         ui.vertical_centered(|ui| {
-            ui.heading("Admin console");
+            ui.heading("Server console");
             ui.add_space(10.0);
 
             if self.is_running() {
