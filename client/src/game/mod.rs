@@ -6,6 +6,7 @@ pub(crate) mod net;
 mod raycast;
 mod texture;
 
+
 use crate::args::ARGS;
 use crate::game::minimap::Minimap;
 use crate::game::raycast::*;
@@ -299,10 +300,20 @@ impl ProgramState for Game {
                 }
 
                 notan::egui::Area::new("fps-counter")
-                    .fixed_pos(notan::egui::pos2(550.0, 5.0))
-                    .show(ctx, |ui| {
-                        ui.label(format!("FPS: {}", self.fps.tick()));
-                    });
+    .fixed_pos(notan::egui::pos2(550.0, 5.0))
+    .show(ctx, |ui| {
+        let frame = Frame {
+            fill: Color32::WHITE, // Couleur blanche en arrière-plan
+            rounding: 5.0.into(),
+            inner_margin: 10.0.into(),
+            ..Default::default()
+        };
+
+        frame.show(ui, |ui| {
+            ui.label(format!("FPS: {}", self.fps.tick()));
+        });
+    });
+
             });
 
             gfx.render(&out);
