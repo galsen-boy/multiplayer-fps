@@ -6,7 +6,6 @@ pub(crate) mod net;
 mod raycast;
 mod texture;
 
-
 use crate::args::ARGS;
 use crate::game::minimap::Minimap;
 use crate::game::raycast::*;
