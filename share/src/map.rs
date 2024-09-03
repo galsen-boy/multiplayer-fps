@@ -16,12 +16,6 @@ pub struct Map {
     pub data: Vec<MapCell>,
 }
 
-#[derive(Debug, Clone, PartialEq)]
-struct Skip {
-    pub x: usize,
-    pub y: usize,
-}
-
 #[rustfmt::s::macros(vec)]
 impl Default for Map {
     fn default() -> Self {
